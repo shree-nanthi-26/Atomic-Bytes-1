@@ -9,7 +9,9 @@
         content="Leading provider of CNC machining and automated assembly solutions with precision tech-driven processes.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -22,12 +24,17 @@
                 <span class="logo-text">PMAC</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li class="dropdown">
-                    <a href="#">Facilities <i class="fa-solid fa-chevron-down"></i></a>
+                    <a href="#facilities">Facilities <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#facilities">Machining Solutions</a></li>
+                        <li><a href="#production-systems">Production Systems</a></li>
+                        <li><a href="#industries">Industrial Portfolio</a></li>
+                    </ul>
                 </li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Case Studies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
             </ul>
             <div class="nav-cta">
                 <a href="#" class="btn-contact">
@@ -38,7 +45,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <main class="hero-section">
+    <main class="hero-section" id="home">
         <div class="container hero-content">
             <div class="hero-header">
                 <div class="hero-text-container">
@@ -67,7 +74,7 @@
     </main>
 
     <!-- Engineering Progress Section -->
-    <section class="section engineering-progress">
+    <section class="section engineering-progress" id="about">
         <div class="container bg-pattern-wrapper">
             <div class="flex-row">
                 <div class="section-image animate-fade-left">
@@ -80,21 +87,39 @@
                         in-line inspection systems. Our workflows reduce cycle time, improve dimensional accuracy, and
                         ensure batch-to-batch consistency across critical industrial applications.</p>
                     <div class="features-grid">
-                        <div class="feature-item">
-                            <div class="feature-icon-wrapper">
-                                <i class="fa-solid fa-layer-group feature-icon"></i>
+                        <!-- Feature 1 -->
+                        <div class="feature-item-alt">
+                            <div class="feature-icon-ghost">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30 10L47.32 20V40L30 50L12.68 40V20L30 10Z" fill="#9333ea"
+                                        fill-opacity="0.1" />
+                                    <path d="M35 15L52.32 25V45L35 55L17.68 45V25L35 15Z" fill="#9333ea"
+                                        fill-opacity="0.2" />
+                                    <path d="M40 20L57.32 30V50L40 60L22.68 50V30L40 20Z" fill="#9333ea"
+                                        fill-opacity="0.4" />
+                                </svg>
                             </div>
-                            <div class="feature-content">
+                            <div class="feature-content-alt">
                                 <h3>Production-Focused Expertise</h3>
                                 <p>Our engineering teams bring hands-on experience in precision component manufacturing
                                     and automation-driven workflows.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon-wrapper">
-                                <i class="fa-solid fa-clone feature-icon"></i>
+                        <!-- Feature 2 -->
+                        <div class="feature-item-alt">
+                            <div class="feature-icon-ghost">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 15L45 45M45 15L15 45" stroke="#9333ea" stroke-width="8"
+                                        stroke-linecap="round" opacity="0.2" />
+                                    <path d="M20 20L50 50M50 20L20 50" stroke="#9333ea" stroke-width="8"
+                                        stroke-linecap="round" opacity="0.4" />
+                                    <path d="M25 25L55 55M55 25L25 55" stroke="#9333ea" stroke-width="8"
+                                        stroke-linecap="round" />
+                                </svg>
                             </div>
-                            <div class="feature-content">
+                            <div class="feature-content-alt">
                                 <h3>Validated Process Engineering</h3>
                                 <p>Tested machining strategies that improve cycle time, dimensional stability, and batch
                                     consistency.</p>
@@ -128,12 +153,12 @@
     </section>
 
     <!-- Manufacturing Solutions Section Refined -->
-    <section class="section solutions-section">
+    <section class="section solutions-section" id="facilities">
         <div class="container">
             <h2 class="section-center-title">Precision-Driven Manufacturing Solutions</h2>
             <div class="cards-grid">
                 <div class="solution-card">
-                    <div class="card-image"><img src="automated_assembly_card.png"
+                    <div class="card-image"><img src="robotic_production_line.png"
                             alt="High-Tolerance CNC Machining process"></div>
                     <div class="card-content">
                         <h3>High-Tolerance CNC Machining</h3>
@@ -168,7 +193,7 @@
         </div>
     </section>
     <!-- Digital Enabled Systems Section Refined -->
-    <section class="section digital-systems bg-dots-white">
+    <section class="section digital-systems bg-dots-white" id="production-systems">
         <div class="container">
             <div class="digital-header">
                 <h2>Digitally Enabled Production Systems</h2>
@@ -215,21 +240,21 @@
             <h2 class="choice-title">What Makes Us The Right Choice</h2>
             <p class="choice-desc">Our approach is engineered for high-precision manufacturing environments, combining
                 domain expertise with production-driven implementation to solve real factory floor challenges.</p>
-            <a href="#" class="btn-primary choice-cta">Request a Quote <i class="fa-solid fa-angles-right"></i></a>
+            <a href="#" class="btn-primary choice-pill-btn">Request a Quote <i class="fa-solid fa-angles-right"></i></a>
 
             <div class="choice-cards-grid">
                 <div class="choice-card">
-                    <div class="choice-icon-dots"><span></span><span></span><span></span><span></span></div>
+                    <div class="choice-icon-dots"></div>
                     <h3>Precision Manufacturing Expertise</h3>
                     <p>Hands-on experience across CNC machining and component finishing environments.</p>
                 </div>
                 <div class="choice-card">
-                    <div class="choice-icon-dots"><span></span><span></span><span></span><span></span></div>
+                    <div class="choice-icon-dots"></div>
                     <h3>End-to-End Production Support</h3>
                     <p>From prototyping to batch manufacturing and final assembly.</p>
                 </div>
                 <div class="choice-card">
-                    <div class="choice-icon-dots"><span></span><span></span><span></span><span></span></div>
+                    <div class="choice-icon-dots"></div>
                     <h3>Process-Driven Implementation</h3>
                     <p>Reduced cycle time. Improved dimensional accuracy.</p>
                 </div>
@@ -251,7 +276,7 @@
         </div>
     </section>
     <!-- Industry Grid Section Refined -->
-    <section class="section industry-grid-dark">
+    <section class="section industry-grid-dark" id="industries">
         <div class="container">
             <h2 class="choice-title text-white">Engineered For Critical Industries</h2>
 
@@ -346,12 +371,12 @@
             <div class="partners-block">
                 <p class="partners-sub">Trusted manufacturing partner to leading OEMs and Tier-1 suppliers.</p>
                 <div class="partners-grid-refined">
-                    <div class="partner-card"><span>GE</span></div>
-                    <div class="partner-card"><span>CATERPILLAR</span></div>
-                    <div class="partner-card"><span>SIEMENS</span></div>
-                    <div class="partner-card"><span>ASHOK LEYLAND</span></div>
-                    <div class="partner-card"><span>TAFE</span></div>
-                    <div class="partner-card"><span>CIRCOR</span></div>
+                    <div class="partner-card"><img src="logo1.png" alt="GE"></div>
+                    <div class="partner-card"><img src="logo 2.png" alt="CATERPILLAR"></div>
+                    <div class="partner-card"><img src="logo 3.png" alt="SIEMENS Energy"></div>
+                    <div class="partner-card"><img src="logo 4.png" alt="ASHOK LEYLAND"></div>
+                    <div class="partner-card"><img src="logo 5.png" alt="TAFE"></div>
+                    <div class="partner-card"><img src="logo 6.png" alt="CIRCOR"></div>
                 </div>
             </div>
         </div>
@@ -391,7 +416,7 @@
         </div>
     </section>
     <!-- Detailed Case Study Spotlight -->
-    <section class="section case-study-detailed-dark">
+    <section class="section case-study-detailed-dark" id="case-studies">
         <div class="container">
             <div class="cs-detailed-grid">
                 <!-- Left Side: Visual & Identity -->
@@ -545,7 +570,8 @@
                     <button class="circle-btn-dark"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <div class="action-card-white image-style">
-                    <div class="ac-img"><img src="footer_capabilities_thumb.png" alt="Explore PMAC Machining Capabilities"></div>
+                    <div class="ac-img"><img src="footer_capabilities_thumb.png"
+                            alt="Explore PMAC Machining Capabilities"></div>
                     <span>Explore machining capabilities</span>
                     <button class="circle-btn-dark"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
