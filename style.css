@@ -1034,10 +1034,16 @@ body {
 }
 
 .approach-refined.bg-lavender-vertical {
-    background-color: #f8f4ff;
+    display: flex;
+    width: 1440px;
+    padding: 129.1px 90px 130px 90px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--color-grey-97, #F8EFFF);
     position: relative;
-    padding: 120px 0;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .bg-lavender-vertical::before,
@@ -1284,8 +1290,9 @@ body {
     padding: 128.795px 120px 130px 120px;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #121212;
+    background: var(--color-magenta-8, #151216);
     position: relative;
+    margin: 0 auto;
 }
 
 .cs-detailed-grid {
@@ -1887,11 +1894,11 @@ body {
 
 .cfr-text p {
     color: var(--industro-wbs-webflow-io-baltic-sea, var(--color-magenta-8, #151216));
-    font-family: var(--font-family-Font-1, Inter);
-    font-size: var(--line-height-24, 24px);
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--radius-20, 20px);
     font-style: normal;
-    font-weight: var(--font-weight-300, 300);
-    line-height: var(--line-height-28_8, 28.8px);
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-24, 24px);
     max-width: 250px;
 }
 
