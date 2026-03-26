@@ -776,17 +776,20 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     display: block;
-    margin: 0; /* Left align */
+    margin: 0;
+    /* Left align */
 }
 
 .digital-main-visual {
-    margin-bottom: 80px; /* More spacious as requested */
+    margin-bottom: 80px;
+    /* More spacious as requested */
 }
 
 .digital-features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px; /* More open gap */
+    gap: 60px;
+    /* More open gap */
 }
 
 .digital-feat-item {
@@ -1351,8 +1354,12 @@ body {
 
 /* Detailed Case Study Refined */
 .case-study-detailed-dark {
+    display: flex;
+    width: 1440px;
+    padding: 128.795px 120px 130px 120px;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #121212;
-    padding: 100px 0 140px;
     position: relative;
 }
 
@@ -1375,13 +1382,23 @@ body {
 }
 
 .cs-image-box img {
-    width: 100%;
+    width: auto;
+    height: 333px;
+    flex-shrink: 0;
+    align-self: stretch;
+    aspect-ratio: 1 / 1;
     border-radius: 20px;
+    background: url("industrial_automation_interface.png") lightgray -83.25px 0px / 150% 100% no-repeat;
+    object-fit: cover;
 }
 
 .cs-identity h3 {
-    color: white;
-    font-size: 1.5rem;
+    color: var(--record-stem-69836810-figma-site-white, var(--color-white-solid, #FFF));
+    font-family: var(--font-family-Font-1, Inter);
+    font-size: var(--radius-20, 20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--line-height-24, 24px);
     margin-bottom: 12px;
 }
 
@@ -1392,9 +1409,13 @@ body {
 }
 
 .cs-address {
-    color: #a1a1aa;
-    font-size: 0.9rem;
-    line-height: 1.4;
+    width: 388px;
+    color: var(--record-stem-69836810-figma-site-white, var(--color-white-solid, #FFF));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--font-size-16, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-20_8, 20.8px);
 }
 
 .cs-right {
@@ -1402,18 +1423,34 @@ body {
 }
 
 .cs-title {
-    font-size: 2.8rem;
-    color: white;
-    font-weight: 700;
+    align-self: stretch;
+    color: var(--record-stem-69836810-figma-site-white, var(--color-white-solid, #FFF));
+    font-family: var(--font-family-Font-1, Inter);
+    font-size: var(--font-size-38, 38px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--line-height-45_6, 45.6px);
     margin-bottom: 40px;
-    line-height: 1.2;
 }
 
 .cs-summary p {
-    color: #d4d4d8;
+    align-self: stretch;
+    color: var(--record-stem-69836810-figma-site-white, var(--color-white-solid, #FFF));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--font-size-16, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-20_8, 20.8px);
     margin-bottom: 20px;
-    font-size: 1.1rem;
-    line-height: 1.6;
+}
+
+.cs-summary strong {
+    color: var(--industro-wbs-webflow-io-cloudy, var(--color-grey-65, #AAA6A2));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--font-size-16, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-20_8, 20.8px);
 }
 
 .cs-metrics {
@@ -1421,8 +1458,12 @@ body {
 }
 
 .metric-label {
-    color: #71717a;
-    font-size: 0.95rem;
+    color: var(--industro-wbs-webflow-io-cloud, var(--color-grey-76, #C4C2C0));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--font-size-16, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-20_8, 20.8px);
     margin-bottom: 20px;
 }
 
@@ -1432,23 +1473,34 @@ body {
 }
 
 .metric-badge {
-    background: #1a1a24;
-    padding: 15px 25px;
-    border-radius: 12px;
-    min-width: 280px;
+    display: flex;
+    padding: 10px 14px;
+    align-items: flex-start;
+    gap: var(--item-spacing-10, 10px);
+    align-self: stretch;
+    border-radius: 10px;
+    background: var(--color-violet-16, #2A222F);
+    min-width: 200px;
 }
 
 .m-val {
     display: block;
-    color: white;
-    font-size: 2rem;
-    font-weight: 700;
+    color: var(--record-stem-69836810-figma-site-white, var(--color-white-solid, #FFF));
+    font-family: var(--font-family-Font-1, Inter);
+    font-size: 23.6px;
+    font-style: normal;
+    font-weight: var(--font-weight-300, 300);
+    line-height: var(--line-height-28_8, 28.8px);
     margin-bottom: 5px;
 }
 
 .m-txt {
-    color: #a1a1aa;
-    font-size: 0.9rem;
+    color: var(--industro-wbs-webflow-io-cloud, var(--color-grey-76, #C4C2C0));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--font-size-16, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-20_8, 20.8px);
 }
 
 .cs-footer-link {
@@ -1461,17 +1513,19 @@ body {
 
 /* Floating Testimonial Bar */
 .cs-testi-bar {
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 30px 40px;
     display: flex;
-    align-items: center;
-    gap: 40px;
+    padding: 30px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--item-spacing-30, 30px);
+    align-self: stretch;
+    border-radius: 20px;
+    background: var(--color-white-solid, #FFF);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
     position: absolute;
-    bottom: -60px;
-    left: 20px;
-    right: 20px;
+    bottom: 40px;
+    left: 60px;
+    right: 60px;
     z-index: 10;
 }
 
@@ -1483,29 +1537,41 @@ body {
 }
 
 .ctb-author img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    max-width: var(--width-363_33, 363.33px);
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: url("testimonial_karthikeyan.png") lightgray 50% / cover no-repeat;
     object-fit: cover;
 }
 
 .ctb-name {
     display: block;
-    font-weight: 700;
-    color: #18181b;
-    font-size: 1.1rem;
+    color: var(--industro-wbs-webflow-io-baltic-sea, var(--color-magenta-8, #151216));
+    font-family: var(--font-family-Font-1, Inter);
+    font-size: var(--radius-20, 20px);
+    font-style: normal;
+    font-weight: var(--font-weight-300, 300);
+    line-height: var(--line-height-24, 24px);
 }
 
 .ctb-role {
-    color: #71717a;
-    font-size: 0.9rem;
+    color: var(--industro-wbs-webflow-io-dove-gray, var(--color-grey-43, #706C6A));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--item-spacing-14, 14px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-18_2, 18.2px);
 }
 
 .ctb-quote p {
-    color: #18181b;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.4;
+    color: var(--industro-wbs-webflow-io-baltic-sea, var(--color-magenta-8, #151216));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--radius-20, 20px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-24, 24px);
 }
 
 /* Refined Footer Styles */
@@ -1742,26 +1808,49 @@ body {
 }
 
 .insights-header h2 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #18181b;
+    color: var(--industro-wbs-webflow-io-baltic-sea, var(--color-magenta-8, #151216));
+    font-family: var(--font-family-Font-1, Inter);
+    font-size: var(--font-size-52, 52px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--line-height-62_4, 62.4px);
 }
 
 .btn-blog {
-    background-color: var(--accent-purple);
-    color: white;
-    padding: 12px 25px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 600;
     display: flex;
+    width: 156.22px;
+    padding: 20px 25px;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    transition: transform 0.3s ease;
+    gap: var(--item-spacing-10, 10px);
+    background-color: #9333ea;
+    color: var(--record-stem-69836810-figma-site-white, var(--color-white-solid, #FFF));
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40px;
+    /* industro-wbs.webflow.io/Semantic/Link */
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--font-size-16, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-500, 500);
+    line-height: var(--line-height-17_6, 17.6px);
+    /* 110% */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.2);
 }
 
 .btn-blog:hover {
-    transform: translateX(5px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(147, 51, 234, 0.3);
+}
+
+.btn-blog svg {
+    width: 14px;
+    height: 16.471px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blog-grid-refined {
@@ -1777,7 +1866,8 @@ body {
 
 .blog-img-box {
     position: relative;
-    height: 250px;
+    width: 333.7px;
+    height: 354.61px;
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -1794,16 +1884,20 @@ body {
     transform: scale(1.1);
 }
 
+.blog-card-new:first-child .blog-img-box {
+    width: 515.82px;
+}
+
 .blog-featured-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    background: var(--accent-purple);
+    top: 20px;
+    left: 20px;
+    background: #a855f7;
     color: white;
-    padding: 5px 12px;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
 }
 
 .blog-meta-new {
@@ -1815,11 +1909,14 @@ body {
 
 .blog-tag-new {
     background: #fdfafd;
-    color: var(--accent-purple);
+    color: var(--industro-wbs-webflow-io-amethyst, var(--color-violet-55, #9550C9));
     padding: 4px 12px;
     border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--item-spacing-14, 14px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: var(--line-height-19_6, 19.6px);
 }
 
 .blog-date-new {
@@ -1828,27 +1925,34 @@ body {
 }
 
 .blog-card-new h3 {
-    font-size: 1.35rem;
-    color: #18181b;
-    font-weight: 600;
+    font-size: 1.25rem;
+    color: #3f3f46;
+    font-weight: 500;
     line-height: 1.4;
     transition: color 0.3s ease;
+    margin-top: 5px;
 }
 
 .blog-card-new:hover h3 {
-    color: var(--accent-purple);
+    color: #18181b;
 }
 
 /* Unified Contact Form Box */
 .contact-form-refined {
-    background: #f6f0ff;
-    padding: 50px 60px;
-    border-radius: 40px;
+    background: var(--color-white-solid, #FFF);
+    width: 1200px;
+    height: 342.2px;
+    display: flex;
+    padding: 30px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--item-spacing-30, 30px);
+    align-self: stretch;
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+    margin-top: 20px;
+    border: 1px solid #f3e8ff;
 }
 
 .cfr-text {
@@ -1857,11 +1961,13 @@ body {
 }
 
 .cfr-text p {
-    font-size: 1.5rem;
-    color: #18181b;
-    font-weight: 500;
-    line-height: 1.4;
-    max-width: 280px;
+    color: var(--industro-wbs-webflow-io-baltic-sea, var(--color-magenta-8, #151216));
+    font-family: var(--font-family-Font-1, Inter);
+    font-size: var(--line-height-24, 24px);
+    font-style: normal;
+    font-weight: var(--font-weight-300, 300);
+    line-height: var(--line-height-28_8, 28.8px);
+    max-width: 250px;
 }
 
 .cfr-form-fields {
@@ -1881,13 +1987,24 @@ body {
 
 .cfr-form-fields input,
 .cfr-form-fields textarea {
+    align-self: stretch;
     padding: 16px 20px;
     border: none;
     border-radius: 12px;
     background: #ffffff;
-    color: #18181b;
-    font-size: 1rem;
-    font-family: 'Outfit', sans-serif;
+    color: var(--industro-wbs-webflow-io-dove-gray, var(--color-grey-43, #706C6A));
+    font-family: var(--font-family-Font-2, Rubik);
+    font-size: var(--item-spacing-14, 14px);
+    font-style: normal;
+    font-weight: var(--font-weight-400, 400);
+    line-height: normal;
+    outline: none;
+}
+
+.cfr-form-fields input::placeholder,
+.cfr-form-fields textarea::placeholder {
+    color: var(--industro-wbs-webflow-io-dove-gray, var(--color-grey-43, #706C6A));
+    opacity: 0.8;
 }
 
 .cfr-form-fields textarea {
@@ -1915,14 +2032,57 @@ body {
 
 .cfr-bg-accent {
     position: absolute;
-    bottom: -30px;
-    left: -30px;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, var(--accent-purple) 1px, transparent 1px);
-    background-size: 20px 20px;
-    opacity: 0.1;
+    bottom: -20px;
+    left: -20px;
+    width: 240px;
+    height: 240px;
+    opacity: 0.15;
     z-index: 0;
+    pointer-events: none;
+}
+
+.cfr-bg-accent svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Blog Pagination */
+.blog-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+    border-top: 1px solid #f4f4f5;
+    padding-top: 30px;
+}
+
+.pagination-info {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #18181b;
+    letter-spacing: 4px;
+    padding-left: 10px;
+}
+
+.blog-pagination .nav-btn-mini {
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #71717a;
+    transition: all 0.3s;
+}
+
+.blog-pagination .nav-btn-mini:hover {
+    background: #f4f4f5;
+    color: #18181b;
+    border-color: #d4d4d8;
 }
 
 /* Refined Main Footer */
